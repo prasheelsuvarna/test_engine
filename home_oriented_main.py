@@ -949,14 +949,14 @@ class HomeOrientedBookingAssigner:
                     test_active_km = _calculate_active_km(test_route, bookings)  # Pass bookings for lookup
                     
                     # Calculate difference (dead km - active km) - we want this to be minimal
-                    if test_dead_km <= test_active_km:
-                            # Calculate difference (dead km - active km) - we want this minimal
-                            difference = test_dead_km - test_active_km
+                    difference = test_dead_km - test_active_km
 
-                            if difference < best_difference:
-                                best_difference = difference
-                                best_vehicle = vehicle
+                    if difference < best_difference:
+                        best_difference = difference
+                        best_vehicle = vehicle
                 
+                            # Calculate difference (dead km - active km) - we want this minimal
+                            
                 if best_vehicle:
                     # Assign the fresh booking to the best vehicle but don't mark as routed yet
                     self.assign_booking_to_vehicle(booking, best_vehicle)
@@ -1009,14 +1009,14 @@ class HomeOrientedBookingAssigner:
                             test_route = vehicle.route + [pickup_location, drop_location]
                             test_dead_km = _calculate_ddm(test_route, vehicle.home_lat, vehicle.home_lng)
                             test_active_km = _calculate_active_km(test_route, bookings)
-                            if test_dead_km <= test_active_km:  
+                            
                                 
-                                difference = test_dead_km - test_active_km  
+                            difference = test_dead_km - test_active_km  
                             
                           
-                                if difference < best_difference:
-                                    best_difference = difference
-                                    best_vehicle = vehicle
+                            if difference < best_difference:
+                                best_difference = difference
+                                best_vehicle = vehicle
                         
                         if best_vehicle:
                             # Assign the fresh booking to the best higher class vehicle but don't mark as routed yet

@@ -93,43 +93,43 @@ def get_nearest_vehicle_h3(booking_pickup_lat, booking_pickup_lng, vehicles, pic
     """
     return -1  # Placeholder implementation
 
-def _find_nearest_vehicle_by_h3(self, booking: Dict) -> Optional[int]:
-        """Find the nearest vehicle based on H3 proximity and vehicle type matching"""
-        if not self.vehicles:
-            return None
+# def _find_nearest_vehicle_by_h3(self, booking: Dict) -> Optional[int]:
+#         """Find the nearest vehicle based on H3 proximity and vehicle type matching"""
+#         if not self.vehicles:
+#             return None
             
-        booking_type = booking.get("vehicle_type", "class1")
+#         booking_type = booking.get("vehicle_type", "class1")
         
-        try:
-            booking_hex = latlng_to_h3(booking["pickup_lat"], booking["pickup_lon"], Config.H3_RESOLUTION)
-            if not booking_hex:
-                # Fallback to first vehicle of correct type if H3 conversion fails
-                for i, vehicle in enumerate(self.vehicles):
-                    if vehicle["vehicle_type"] == booking_type:
-                        return i
-                return None
+#         try:
+#             booking_hex = latlng_to_h3(booking["pickup_lat"], booking["pickup_lon"], Config.H3_RESOLUTION)
+#             if not booking_hex:
+#                 # Fallback to first vehicle of correct type if H3 conversion fails
+#                 for i, vehicle in enumerate(self.vehicles):
+#                     if vehicle["vehicle_type"] == booking_type:
+#                         return i
+#                 return None
                 
-            min_h3_distance = float('inf')
-            nearest_vehicle_idx = None
+#             min_h3_distance = float('inf')
+#             nearest_vehicle_idx = None
             
-            for i, vehicle in enumerate(self.vehicles):
-                # Only consider vehicles of the correct type
-                if vehicle["vehicle_type"] != booking_type:
-                    continue
+#             for i, vehicle in enumerate(self.vehicles):
+#                 # Only consider vehicles of the correct type
+#                 if vehicle["vehicle_type"] != booking_type:
+#                     continue
                     
-                vehicle_hex = vehicle["h3_hex"]
-                if vehicle_hex:
-                    h3_distance = get_h3_distance(booking_hex, vehicle_hex)
-                    if h3_distance < min_h3_distance:
-                        min_h3_distance = h3_distance
-                        nearest_vehicle_idx = i
+#                 vehicle_hex = vehicle["h3_hex"]
+#                 if vehicle_hex:
+#                     h3_distance = get_h3_distance(booking_hex, vehicle_hex)
+#                     if h3_distance < min_h3_distance:
+#                         min_h3_distance = h3_distance
+#                         nearest_vehicle_idx = i
                         
-            return nearest_vehicle_idx
+#             return nearest_vehicle_idx
             
-        except Exception as e:
-            logger.warning(f"Error finding nearest vehicle by H3: {e}")
-            # Fallback to first vehicle of correct type
-            for i, vehicle in enumerate(self.vehicles):
-                if vehicle["vehicle_type"] == booking_type:
-                    return i
-            return None
+#         except Exception as e:
+#             logger.warning(f"Error finding nearest vehicle by H3: {e}")
+#             # Fallback to first vehicle of correct type
+#             for i, vehicle in enumerate(self.vehicles):
+#                 if vehicle["vehicle_type"] == booking_type:
+#                     return i
+#             return None
