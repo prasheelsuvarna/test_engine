@@ -1,0 +1,152 @@
+[
+  {
+    "vehicle_id": 1,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class1"
+  },
+  {
+    "vehicle_id": 2,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 3,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 4,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 5,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class4"
+  },
+  {
+    "vehicle_id": 6,
+    "home_lat": 13.342150000,
+    "home_lng": 74.74958,
+    "vehicle_type": "class5"
+  },
+  {
+    "vehicle_id": 7,
+    "home_lat": 13.352950000,
+    "home_lng": 74.79103,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 8,
+    "home_lat": 13.352950000,
+    "home_lng": 74.79103,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 9,
+    "home_lat": 13.352950000,
+    "home_lng": 74.79103,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 10,
+    "home_lat": 13.284410000,
+    "home_lng": 74.74784,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 11,
+    "home_lat": 13.284410000,
+    "home_lng": 74.74784,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 12,
+    "home_lat": 13.284410000,
+    "home_lng": 74.74784,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 13,
+    "home_lat": 13.284410000,
+    "home_lng": 74.74784,
+    "vehicle_type": "class4"
+  },
+  {
+    "vehicle_id": 14,
+    "home_lat": 13.212820000,
+    "home_lng": 74.99832,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 15,
+    "home_lat": 13.212820000,
+    "home_lng": 74.99832,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 16,
+    "home_lat": 13.212820000,
+    "home_lng": 74.99832,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 17,
+    "home_lat": 13.212820000,
+    "home_lng": 74.99832,
+    "vehicle_type": "class4"
+  },
+  {
+    "vehicle_id": 18,
+    "home_lat": 13.231700000,
+    "home_lng": 74.74723,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 19,
+    "home_lat": 13.231700000,
+    "home_lng": 74.74723,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 20,
+    "home_lat": 13.436620000,
+    "home_lng": 74.74458,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 21,
+    "home_lat": 13.436620000,
+    "home_lng": 74.74458,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 22,
+    "home_lat": 13.436620000,
+    "home_lng": 74.74458,
+    "vehicle_type": "class4"
+  },
+  {
+    "vehicle_id": 23,
+    "home_lat": 13.623360000,
+    "home_lng": 74.69151,
+    "vehicle_type": "class2"
+  },
+  {
+    "vehicle_id": 24,
+    "home_lat": 13.623360000,
+    "home_lng": 74.69151,
+    "vehicle_type": "class3"
+  },
+  {
+    "vehicle_id": 25,
+    "home_lat": 13.623360000,
+    "home_lng": 74.69151,
+    "vehicle_type": "class4"
+  }
+]
