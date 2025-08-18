@@ -208,7 +208,7 @@ class HomeOrientedBookingAssigner:
             return suitable_vehicles
         
         # Expanding search with increasing radius
-        max_search_radius = 20  # Maximum search radius in H3 rings
+        max_search_radius = 20 # Maximum search radius in H3 rings
         
         for search_radius in range(max_search_radius + 1):
             suitable_vehicles = []

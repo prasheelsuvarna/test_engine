@@ -110,4 +110,20 @@ def _calculate_active_km(route: List[Tuple[float, float]], bookings: List[Dict])
 
 
 
-    
+def    _calculate_ddm_without_final_home(route: List[Tuple[float, float]], home_lat: float, home_lng: float) -> float:
+        if len(route) < 2:
+            return 0.0
+        
+        ddm = 0.0
+        first_pickup = route[0]
+        if (first_pickup[0] != home_lat or first_pickup[1] != home_lng):
+            ddm += get_distance((home_lat, home_lng), (first_pickup[0], first_pickup[1]))
+        
+        for i in range(1, len(route) - 1, 2):
+            if i + 1 < len(route):
+                dropoff = route[i]
+                next_pickup = route[i + 1]
+                if (dropoff[0] != next_pickup[0] or dropoff[1] != next_pickup[1]):
+                    ddm += get_distance((dropoff[0], dropoff[1]), (next_pickup[0], next_pickup[1]))
+        
+        return ddm
